@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    background-color: #42326E;
+    border-radius: 20px;
+    padding: 50px;
+    width: 100%;
+    gap: 18px;
+    margin-top: none;
+}
+
+#Inicio{
+    display: flex;
+    gap: 18px;
+}
+
+.numero_inicio{
+    font-family: "Montserrat", sans-serif;
+    color: #E0D4FC;
+    font-size: 80px;
+}
+
+.titulo_inicio{
+    font-family: "Montserrat", sans-serif;
+    color: #E0D4FC;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.texto_inicio{
+    font-family: "Lora", serif;
+    color: #E0D4FC;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1170px){
+    #Inicio{
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+}/*isso aqui faz com que o ícone apareça quando tiver com estas condições, deixando resposivo*/
+
