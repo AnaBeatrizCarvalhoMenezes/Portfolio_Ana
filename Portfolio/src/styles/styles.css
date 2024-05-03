@@ -11,7 +11,10 @@
 }/*Isso faz todas as fontes da página seguirem esse padrão*/
 
 body {
-    background-color: #E0D4FC;
+    background-image: url('Back.png'); /* Insira o caminho da sua imagem */
+    background-repeat: repeat; /* A imagem não será repetida */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área da página */
+    background-position: left top;
 }/*Isso faz todo o body do site ter as mesmas características*/
 
 

@@ -2,10 +2,7 @@
 header{
     width: 100%;/*Largura da página completa*/
     padding: 10px 8%; /*tamanho do padding e 8% para responsividade*/
-    position: sticky;
-    background-color: #E0D4FC;
-    top: 0;
-    z-index: 3;
+    background-color: transparent;
 }/*características do header do html*/
 
 hr{
@@ -20,6 +17,18 @@ hr{
 	margin: 0 auto 0 0; /* Para navegadores standard */
 }
 
+.linevav{
+    border-width: 0; 
+	height: 1px;
+    background: #42326E;
+	border-top-width: 1px;
+    color: #42326E;
+    width: 100%;
+    border: none;
+	text-align: left; /* Para o IE */
+    opacity: 0.5; /* Começa com opacidade 0 */
+	margin: 0 auto 0 0; /* Para navegadores standard */
+}
 #navbar{
     width: 100%;
     display: flex;/*itens lado a lado*/
@@ -29,7 +38,7 @@ hr{
 }/*características da class navbar*/
 
 #nav_logo{
-    width: 10%;
+    width: 7%;
 }/*caracteristicas da class nav_logo*/
 
 #nav_list { 
@@ -38,6 +47,22 @@ hr{
     list-style: none;/*tira as caracteristicas padrão da list no html*/
     color: #42326E;
 }/*caracteristicas dos itens da lista nav_list em conjunto*/
+
+.nav_item hr {
+    bottom: 0;
+    left: 0;
+    width: 0; /* Começa com largura 0 para fazer a transição da esquerda para a direita */
+    height: 2px;
+    background-color: #42326E; /* Cor da linha */
+    border: none;
+    opacity: 0; /* Começa com opacidade 0 */
+    transition: width 0.7s ease-out, opacity 0.7s ease-out; /* Transições para largura e opacidade */
+}
+
+.nav_item:hover hr {
+    opacity: 1; /* Aumenta a opacidade para 1 */
+    width: 100%; /* Expande a linha para a largura completa */
+}
 
 .nav_item a {
     color: #42326E;
@@ -48,7 +73,6 @@ hr{
     color: #42326E;
     font-weight: 600;
     transition: font-weight .3s ease3s;
-
 }/*caracteristicas dos itens da lista nav_list separados, especificamente cada um dos itens*/
 
 .nav_item.active a {
@@ -97,6 +121,9 @@ hr{
         list-style: none;
         text-align:right;
         font-size: 30px;
+    }
+    .linevav{
+        display: none;
     }
 }/*isso aqui faz com que o ícone apareça quando tiver com estas condições, deixando resposivo*/
 
