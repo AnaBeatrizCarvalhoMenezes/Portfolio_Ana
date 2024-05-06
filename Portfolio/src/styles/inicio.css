@@ -5,7 +5,7 @@
 .bloco {
     display: flex;
     flex-direction: column;
-    background-color: #42326E;
+    background-color: #e1e4e3;
     border-radius: 20px;
     padding: 50px;
     width: 100%;
@@ -16,24 +16,25 @@
 #Inicio{
     display: flex;
     gap: 18px;
+    margin-top: 20px;
 }
 
 .numero_inicio{
     font-family: "Montserrat", sans-serif;
-    color: #E0D4FC;
+    color: #1B1B1E;    ;
     font-size: 80px;
 }
 
 .titulo_inicio{
     font-family: "Montserrat", sans-serif;
-    color: #E0D4FC;
+    color: #1B1B1E;
     font-size: 40px;
     font-weight: 600;
 }
 
 .texto_inicio{
     font-family: "Lora", serif;
-    color: #E0D4FC;
+    color: #1B1B1E;
     font-size: 20px;
     font-weight: 300;
 }

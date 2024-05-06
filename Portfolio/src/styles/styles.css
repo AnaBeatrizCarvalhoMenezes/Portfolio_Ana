@@ -11,16 +11,14 @@
 }/*Isso faz todas as fontes da página seguirem esse padrão*/
 
 body {
-    background-image: url('Back.png'); /* Insira o caminho da sua imagem */
-    background-repeat: repeat; /* A imagem não será repetida */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área da página */
-    background-position: left top;
+    background-color: #1B1B1E;
 }/*Isso faz todo o body do site ter as mesmas características*/
 
 
 section{
     padding: 28px 8%;
 }
+
 .social-media-buttons {
     display: flex;
     gap: 18px;
@@ -30,17 +28,16 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-    height: 40px;
-    background-color: #ffff;
+    width: 55px;
+    height: 50px;
+    background-color: #e6e6e9;
     font-size: 1.25rem;
-    border-radius: 10px;
+    border-radius: 15px;
     text-decoration: none;
-    color: #42326E;
-    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.1);
+    color: #1B1B1E;
+    box-shadow: 0px 0px 12px 4px rgba(19, 19, 19, 0.6);
     transition: box-shadow .3s ease;
 }
 .social-media-buttons a:hover {
-    box-shadow: 0px 0px 12px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.5);
 }
-

@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*css da navbar*/
 header{
     width: 100%;/*Largura da página completa*/
@@ -5,24 +10,12 @@ header{
     background-color: transparent;
 }/*características do header do html*/
 
-hr{
+.linenav{
     border-width: 0; 
-	height: 5px;
-    background: #42326E;
+	height: 2px;
+    background: #07523F;
 	border-top-width: 1px;
-    color: #42326E;
-    width: 100%;
-    border: 1px solid;
-	text-align: left; /* Para o IE */
-	margin: 0 auto 0 0; /* Para navegadores standard */
-}
-
-.linevav{
-    border-width: 0; 
-	height: 1px;
-    background: #42326E;
-	border-top-width: 1px;
-    color: #42326E;
+    color: #07523F;
     width: 100%;
     border: none;
 	text-align: left; /* Para o IE */
@@ -39,13 +32,13 @@ hr{
 
 #nav_logo{
     width: 7%;
+    gap: 0px;
 }/*caracteristicas da class nav_logo*/
 
 #nav_list { 
     display: flex;/*itens lado a lado*/
     gap: 100px;/*espaçamento entre os itens da lista*/
     list-style: none;/*tira as caracteristicas padrão da list no html*/
-    color: #42326E;
 }/*caracteristicas dos itens da lista nav_list em conjunto*/
 
 .nav_item hr {
@@ -53,7 +46,7 @@ hr{
     left: 0;
     width: 0; /* Começa com largura 0 para fazer a transição da esquerda para a direita */
     height: 2px;
-    background-color: #42326E; /* Cor da linha */
+    background-color: #FBFFFE; /* Cor da linha */
     border: none;
     opacity: 0; /* Começa com opacidade 0 */
     transition: width 0.7s ease-out, opacity 0.7s ease-out; /* Transições para largura e opacidade */
@@ -65,24 +58,26 @@ hr{
 }
 
 .nav_item a {
-    color: #42326E;
+    color: #FBFFFE;
     text-decoration: none;/*tira as caracteristicas padrão dos links no html*/
+    font-size: 1rem;
 }/*caracteristicas dos itens da lista nav_list separados, especificamente cada um dos itens*/
 
 .nav_item a:hover {
-    color: #42326E;
+    color: #FBFFFE;
     font-weight: 600;
     transition: font-weight .3s ease3s;
 }/*caracteristicas dos itens da lista nav_list separados, especificamente cada um dos itens*/
 
 .nav_item.active a {
-    color: #42326E;
+    color: #FBFFFE;
     font-weight: 600;
 }/*quando o link for ativado, ele se comportará desta forma*/
 
 #mobile_btn{
     display: none;/*não aparece esse conteúdo*/
 }
+
 
 #mobile_menu{
     display: none;
@@ -96,8 +91,8 @@ hr{
     #mobile_btn {
         border: none;
         background-color: transparent;
-        color: #42326E;
-        font-size: 3rem;   
+        color: #07523F;
+        font-size: 2.2rem;   
         display: block;
         cursor: pointer;
     }

@@ -4,4 +4,4 @@ $(document).ready(function(){
         $('#mobile_menu').toggleClass('active');
         $('#mobile_btn').find('i').toggleClass('fa-x');
     });
-});/**Isso aqui é pra barra de nageção funcionar quando vc clicar nele no mobile */
+});
